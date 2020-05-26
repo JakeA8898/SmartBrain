@@ -11,7 +11,8 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 
 const app = new Clarifai.App({
-  apiKey: '8a8bf144080c472cb84284890dc72609'
+  //api key regenerated
+  apiKey: 'Place Key Here'
 });
 
 
