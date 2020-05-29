@@ -12,7 +12,7 @@ import Rank from './components/Rank/Rank';
 
 const app = new Clarifai.App({
   //api key regenerated
-  apiKey: 'Place Key Here'
+  apiKey: 'Put Key Here'
 });
 
 
@@ -72,6 +72,7 @@ class App extends Component {
   onRouteChange = (route) =>{
     if (route === 'signout') {
       this.setState({isSignedIn: false})
+      route = 'signin';
     }else if (route === 'home'){
       this.setState({isSignedIn: true})
     }
