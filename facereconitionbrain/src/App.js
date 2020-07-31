@@ -12,7 +12,7 @@ import Rank from './components/Rank/Rank';
 
 const app = new Clarifai.App({
   //api key regenerated
-  apiKey: 'API_KEY_HERE'
+  apiKey: 'KEY HERE'
 });
 
 
@@ -80,6 +80,7 @@ class App extends Component {
 
   onButtonSubmit = () =>{
     this.setState({imageUrl: this.state.input})
+    console.log(this.state.input)
     app.models.predict(
       Clarifai.FACE_DETECT_MODEL,
       this.state.input)
